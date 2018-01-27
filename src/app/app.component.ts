@@ -15,6 +15,7 @@ import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import { SettingsPage } from "../pages/settings/settings";
 import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
 // import { FAQ } from "../pages/faq/faq";
+import { AddShoppingPage } from '../pages/add-shopping/add-shopping';
 
 
 export interface MenuItem {

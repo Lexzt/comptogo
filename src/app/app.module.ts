@@ -27,6 +27,18 @@ import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 //****************************************************************************************
 import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
 
+//--------------- KEITH FIREBASE ------------------- //
+import { AngularFireModule } from 'angularfire2';
+// for AngularFireDatabase
+import { AngularFireDatabaseModule } from 'angularfire2/database-deprecated';
+import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database-deprecated';
+// for AngularFireAuth
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { FIREBASE_CREDENTIALS } from './firebase.credentials';
+import { AddShoppingPage } from '../pages/add-shopping/add-shopping';
+//--------------- KEITH FIREBASE ------------------- //
+
 // import services
 // end import services
 // end import services
@@ -47,7 +59,8 @@ import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    LeaderboardsPage
+    LeaderboardsPage,
+    AddShoppingPage,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +73,12 @@ import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
     IonicStorageModule.forRoot({
       name: '__ionic3_start_theme',
         driverOrder: ['indexeddb', 'sqlite', 'websql']
-    })
+    }),
+    // Initialise AngularFire with credientials from the dashboard
+    AngularFireModule.initializeApp(FIREBASE_CREDENTIALS),
+    // Import the AngularFireDatabaseModule to use database interactions
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -75,7 +93,8 @@ import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    LeaderboardsPage
+    LeaderboardsPage,
+    AddShoppingPage,
   ],
   providers: [
     StatusBar,

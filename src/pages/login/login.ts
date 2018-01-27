@@ -21,6 +21,7 @@ export class LoginPage {
 
   // login and go to home page
   login() {
+    console.log("Test");
     this.nav.setRoot(TripsPage);
   }
 
