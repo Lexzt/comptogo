@@ -47,7 +47,7 @@ export class MyApp {
       {title: 'Find Tournaments', component: HomePage, icon: 'ios-search'},
       {title: 'My Accomplishments', component: LocalWeatherPage, icon: 'trophy'},
       {title: 'Settings', component: SettingsPage, icon: 'build'},
-      {title: 'Leaderboards', component: LocalWeatherPage, icon: 'stats'},
+      {title: 'Leaderboards', component: LeaderboardsPage, icon: 'stats'},
       {title: 'FAQ', component: LocalWeatherPage, icon: 'help-circle'}
     ];
   }

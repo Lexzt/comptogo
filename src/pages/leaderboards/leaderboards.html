@@ -3,6 +3,41 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>Local Weather</ion-title>
+        <ion-title>Leaderboards</ion-title>
     </ion-navbar>
 </ion-header>
+
+
+<ion-content class="card-background-page">
+  <h2 color="white">Explore</h2>
+<ion-grid>
+  <ion-row>
+      <ion-col width-50>
+          <ion-card tappable (click)="moveScene1()">
+            <img src="assets/img/participation.png" class="img1"/>
+            <div class="card-title">Most Participative</div>
+          </ion-card>
+      </ion-col>
+      <ion-col width-50>
+        <ion-card tappable (click)="moveScene2()">
+          <img src="assets/img/medals.jpg" class="img2"/>
+          <div class="card-title">Most Winning Tournaments</div>
+        </ion-card>
+      </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-50>
+        <ion-card tappable (click)="moveScene3()">
+          <img src="assets/img/tennis_court.jpg" class="img3"/>
+          <div class="card-title">Most Tournaments Hosted</div>
+        </ion-card>
+    </ion-col>
+    <ion-col width-50>
+        <ion-card tappable (click)="moveScene4()">
+          <img src="assets/img/ranking.svg" class="img4"/>
+          <div class="card-title">Highest Points</div>
+        </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
