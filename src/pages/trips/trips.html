@@ -1,13 +1,12 @@
 <!-- -->
 <ion-header>
+
   <ion-navbar color="primary">
-    <button ion-button menuToggle>
+    <button ion-button float-left menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>
-      <span ion-text>Activities</span>
-    </ion-title>
-    <button ion-button tappable (click)="addTournament()">
+    
+    <button ion-button float-right tappable (click)="addTournament()">
       <ion-icon name="cog"></ion-icon>
     </button>
   </ion-navbar>
@@ -51,7 +50,6 @@
     </div>
 
     <div class="padding-sm primary-bg">
-      <ion-icon name="time" class="text-white"></ion-icon>
       <span ion-text class="text-white">{{ trip.name }}</span>
       <span class="pull-right" ion-text color="light">
         <strong>Prize Pool: {{ trip.prize | currency:'$':true }}</strong>
