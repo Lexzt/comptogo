@@ -2,7 +2,7 @@ import {Component} from "@angular/core";
 import { NavController, LoadingController, ToastController, NavParams} from "ionic-angular";
 import {TripService} from "../../services/trip-service";
 import {HomePage} from "../home/home";
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database-deprecated';
+import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database-deprecated';
 import { ShoppingItem } from '../../models/shopping-item/shopping-item.interface';
 import { Subscription } from 'rxjs/Subscription';
 import { TripsPage } from "../trips/trips";

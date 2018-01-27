@@ -7,8 +7,8 @@ export interface ShoppingItem {
     price: number;
     rank_min: number;
     rank_max: number;
-    date: number;
-    time: number,
+    date: string;
+    time: string,
     noOfHours: number;
     noOfParticipants: string;
     prize: number;
