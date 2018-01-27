@@ -2,9 +2,8 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>Activity Checkout</ion-title>
+    <ion-title>Activity Checkout {{ dateEpoch }}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -15,6 +14,8 @@
     <ion-grid padding>
       <ion-row>
         <ion-col width-66>
+          <h5 ion-text color="primary">{{ trip.dateEpoch }}</h5>
+          <h5 ion-text color="primary">{{ trip.adults }}</h5>
           <h5 ion-text color="primary">{{ trip.name }}</h5>
           <div>
             <span class="bold">{{ trip.sub_name }}</span>
@@ -22,7 +23,7 @@
             <span ion-text color="dark">{{ adults }} Adults</span>
           </div>
           <div margin-top>
-            <span ion-text color="dark">{{ date | date: 'EEE, MMM dd' }}</span>
+            <span ion-text color="dark">{{ dateInString }}</span>
             <br/>
             <span ion-text>{{ trip.location }}</span>
           </div>
@@ -33,7 +34,7 @@
         </ion-col>
         <ion-col col-4>
           <span ion-text>Total with Tax</span>
-          <h5 ion-text color="primary" class="bold" no-margin>{{ trip.price_adult * adults | currency:'USD':true }}</h5>
+          <h5 ion-text color="primary" class="bold" no-margin>{{ (trip.price * adults) * 1.1 | currency:'SGD$':true }}</h5>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -57,13 +58,15 @@
       <h5 ion-text color="secondary">Other Guests</h5>
 
       <ion-item no-padding>
-        <ion-label color="dark" stacked>Adult 1 Name:</ion-label>
-        <ion-input type="text" placeholder="Ex. Joe Doe" value=""></ion-input>
+        <ion-label color="dark" stacked>Name:</ion-label>
+        <ion-input type="text" placeholder="Name" value=""></ion-input>
       </ion-item>
+      
       <ion-item no-padding>
-        <ion-label color="dark" stacked>Child 1 Name:</ion-label>
-        <ion-input type="text" placeholder="Ex. Joe Doe" value=""></ion-input>
+        <ion-label color="dark" stacked>Name:</ion-label>
+        <ion-input type="text" placeholder="Name" value=""></ion-input>
       </ion-item>
+
     </div>
   </div>
 

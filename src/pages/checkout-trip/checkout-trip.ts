@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {NavController, LoadingController, ToastController} from "ionic-angular";
+import { NavController, LoadingController, ToastController, NavParams} from "ionic-angular";
 import {TripService} from "../../services/trip-service";
 import {HomePage} from "../home/home";
 
@@ -10,16 +10,28 @@ import {HomePage} from "../home/home";
 export class CheckoutTripPage {
   // trip data
   public trip: any;
+  public adultsinfo: any;
   // number of adults
   public adults = 2;
+  public children = 2;
   // date
   public date = new Date();
+  public dateInString = "";
 
   public paymethods = 'creditcard';
 
-  constructor(public nav: NavController, public tripService: TripService, public loadingCtrl: LoadingController, public toastCtrl: ToastController) {
+  constructor(public nav: NavController,
+    public tripService: TripService,
+    public loadingCtrl: LoadingController,
+    public toastCtrl: ToastController,
+    public navParams: NavParams) {
     // set sample data
     this.trip = tripService.getItem(1);
+    this.adults = navParams.get('adults');
+    this.children = navParams.get('children');
+    //this.date.setUTCSeconds(navParams.get('date') / 1000);
+    this.date.setUTCSeconds(1517896800 / 1000);
+    this.dateInString = this.date.toLocaleDateString() + " @ " +  this.date.toLocaleTimeString();
   }
 
   // process send button

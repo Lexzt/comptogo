@@ -25,7 +25,8 @@ import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {faq} from "../pages/faq/faq";
 import {achievements} from "../pages/achievements/achievements";
-
+//****************************************************************************************
+import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
 
 // import services
 // end import services
@@ -47,7 +48,8 @@ import {achievements} from "../pages/achievements/achievements";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    achievements
+    achievements,
+    LeaderboardsPage
   ],
   imports: [
     BrowserModule,
@@ -75,7 +77,8 @@ import {achievements} from "../pages/achievements/achievements";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    achievements
+    achievements,
+    LeaderboardsPage,
   ],
   providers: [
     StatusBar,
