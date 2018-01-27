@@ -19,6 +19,7 @@ import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
 import { ldrsub } from "../pages/ldrsub/ldrsub";
 import { UserProfilePage } from "../pages/userprofile/userprofile";
 // import { FAQ } from "../pages/faq/faq";
+import { AddShoppingPage } from '../pages/add-shopping/add-shopping';
 
 
 export interface MenuItem {
@@ -53,11 +54,8 @@ export class MyApp {
       {title: 'Achievements', component: achievements, icon: 'trophy'},
       // {title: 'Find Tournaments', component: HomePage, icon: 'ios-search'},
       {title: 'Leaderboards', component: LeaderboardsPage, icon: 'stats'},
-      {title: 'Settings', component: SettingsPage, icon: 'build'},
-      {title: 'Leaderboards', component: LeaderboardsPage, icon: 'stats'},
-      {title: 'FAQ', component: faq, icon: 'help-circle'},
-      {title: 'SubpageParticipation', component: ldrsub, icon: 'build'},
-
+      // {title: 'SubpageParticipation', component: ldrsub, icon: 'build'},
+      { title: 'Settings', component: SettingsPage, icon: 'build' },
     ];
   }
 

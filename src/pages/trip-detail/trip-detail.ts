@@ -21,7 +21,8 @@ export class TripDetailPage {
     public tripService: TripService,
     public navParams: NavParams) {
     // set sample data
-    this.trip = tripService.getItem(navParams.get('id'));
+    this.trip = navParams.get('id');
+    console.log(this.trip.$key);
   }
 
   // minus adult when click minus button
@@ -50,6 +51,7 @@ export class TripDetailPage {
       adults: this.adults,
       children: this.children,
       date: this.trip.date,
+      trip: this.trip,
     });
   }
 }
