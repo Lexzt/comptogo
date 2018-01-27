@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { UserProfilePage } from "../userprofile/userprofile";
 
 @Component({
   selector: 'page-ldrsub',
@@ -8,7 +9,7 @@ import { NavController } from 'ionic-angular';
 export class ldrsub {
 
   constructor(public navCtrl: NavController) {
-    
+
   }
 
 }

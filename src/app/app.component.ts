@@ -17,6 +17,7 @@ import { achievements } from "../pages/achievements/achievements";
 import { SettingsPage } from "../pages/settings/settings";
 import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
 import { ldrsub } from "../pages/ldrsub/ldrsub";
+import { UserProfilePage } from "../pages/userprofile/userprofile";
 // import { FAQ } from "../pages/faq/faq";
 
 
