@@ -10,7 +10,7 @@ import {Keyboard} from '@ionic-native/keyboard';
 
 import {ActivityService} from "../services/activity-service";
 import {TripService} from "../services/trip-service";
-import {WeatherProvider} from "../services/weather";
+// import {WeatherProvider} from "../services/weather";
 
 import {MyApp} from "./app.component";
 
@@ -23,9 +23,12 @@ import {RegisterPage} from "../pages/register/register";
 import {SearchLocationPage} from "../pages/search-location/search-location";
 import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
-import {LocalWeatherPage} from "../pages/local-weather/local-weather";
+import {faq} from "../pages/faq/faq";
+import {achievements} from "../pages/achievements/achievements";
 //****************************************************************************************
 import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
+import { ldrsub } from "../pages/ldrsub/ldrsub";
+
 
 // import services
 // end import services
@@ -41,13 +44,15 @@ import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
     CheckoutTripPage,
     HomePage,
     LoginPage,
-    LocalWeatherPage,
+    faq,
     NotificationsPage,
     RegisterPage,
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    LeaderboardsPage
+    achievements,
+    LeaderboardsPage,
+    ldrsub,
   ],
   imports: [
     BrowserModule,
@@ -69,13 +74,15 @@ import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
     CheckoutTripPage,
     HomePage,
     LoginPage,
-    LocalWeatherPage,
+    faq,
     NotificationsPage,
     RegisterPage,
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    LeaderboardsPage
+    achievements,
+    LeaderboardsPage,
+    ldrsub,
   ],
   providers: [
     StatusBar,
@@ -83,7 +90,6 @@ import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
     Keyboard,
     ActivityService,
     TripService,
-    WeatherProvider
   ]
 })
 

@@ -8,7 +8,7 @@ import { HomePage } from "../home/home";
 export class LeaderboardsPage {
 
   constructor(public navCtrl: NavController) {
-
+    
   }
 
   moveScene1(){

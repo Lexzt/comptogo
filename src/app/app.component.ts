@@ -7,13 +7,16 @@ import { Keyboard } from '@ionic-native/keyboard';
 
 import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
-import { LocalWeatherPage } from "../pages/local-weather/local-weather";
+import { faq } from "../pages/faq/faq";
+import { achievements } from "../pages/achievements/achievements";
+// import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 //********************************************************************************************
 //Delete above and use below
 // import { TournamentsPage } from "../pages/tournaments/tournaments";
 // import { AccomplishmentsPage } from "../pages/accomplishments/accomplishments";
 import { SettingsPage } from "../pages/settings/settings";
 import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
+import { ldrsub } from "../pages/ldrsub/ldrsub";
 // import { FAQ } from "../pages/faq/faq";
 
 
@@ -44,11 +47,16 @@ export class MyApp {
 
 //*******************************************************************************************************************
     this.appMenuItems = [
-      {title: 'Find Tournaments', component: HomePage, icon: 'ios-search'},
-      {title: 'My Accomplishments', component: LocalWeatherPage, icon: 'trophy'},
+      {title: 'Home', component: HomePage, icon: 'home'},
+      {title: 'FAQ', component: faq, icon: 'help-circle'},
+      {title: 'Achievements', component: achievements, icon: 'trophy'},
+      // {title: 'Find Tournaments', component: HomePage, icon: 'ios-search'},
+      {title: 'Leaderboards', component: LeaderboardsPage, icon: 'stats'},
       {title: 'Settings', component: SettingsPage, icon: 'build'},
       {title: 'Leaderboards', component: LeaderboardsPage, icon: 'stats'},
-      {title: 'FAQ', component: LocalWeatherPage, icon: 'help-circle'}
+      {title: 'FAQ', component: faq, icon: 'help-circle'},
+      {title: 'SubpageParticipation', component: ldrsub, icon: 'build'},
+
     ];
   }
 
