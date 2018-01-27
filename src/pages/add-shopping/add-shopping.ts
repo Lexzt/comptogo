@@ -48,12 +48,12 @@ export class AddShoppingPage {
       noOfParticipants: 1,
       prize: this.shoppingItem.price,
       cancellation_time: "7d",
-      thumb: "assets/img/trip/thumb/badminton.png",
+      thumb: "assets/img/trip/thumb/trip_1.jpg",
       images: [
-        "assets/img/trip/thumb/badminton2jpg",
-        "assets/img/trip/thumb/badminton3.jpg",
-        "assets/img/trip/thumb/badminton4.jpg",
-        "assets/img/trip/thumb/badminton5.jpg",
+        "assets/img/trip/thumb/trip_2.jpg",
+        "assets/img/trip/thumb/trip_3.jpg",
+        "assets/img/trip/thumb/trip_4.jpg",
+        "assets/img/trip/thumb/trip_5.jpg",
       ],
       highlights: [
         "Sport: " + this.shoppingItem.sports,

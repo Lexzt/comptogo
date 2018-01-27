@@ -13,12 +13,12 @@ export interface ShoppingItem {
     noOfParticipants: string;
     prize: number;
     cancellation_time: string;
-    thumb: "assets/img/trip/thumb/badminton.png";
+    thumb: "assets/img/trip/thumb/trip_1.jpg";
     images: [
-        "assets/img/trip/thumb/badminton2.jpg",
-        "assets/img/trip/thumb/badminton3.jpg",
-        "assets/img/trip/thumb/badminton4.jpg",
-        "assets/img/trip/thumb/badminton5.jpg"
+        "assets/img/trip/thumb/trip_2.jpg",
+        "assets/img/trip/thumb/trip_3.jpg",
+        "assets/img/trip/thumb/trip_4.jpg",
+        "assets/img/trip/thumb/trip_5.jpg"
     ];
     highlights: [
         "Round robin"

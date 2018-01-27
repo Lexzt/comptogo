@@ -52,7 +52,7 @@ export class CheckoutTripPage {
   send() {
     this.shoppingItem.noOfParticipants += this.adults;
     this.shoppingItem.prize += this.adults * this.shoppingItem.price;
-    this.shoppingItem.highlights[5] = "Prize Pool: $" + this.shoppingItem.price * Number(this.shoppingItem.noOfParticipants);
+    this.shoppingItem.highlights[5] = "Prize Pool: $" + Number(this.shoppingItem.price) * Number(this.shoppingItem.noOfParticipants);
     this.shoppingItemRef$.update(this.shoppingItem);
 
     // send booking info
