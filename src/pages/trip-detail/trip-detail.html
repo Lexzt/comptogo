@@ -68,9 +68,9 @@
           </ion-col>
         </ion-row>
         <ion-row margin-top>
-          <ion-col width-70>
+          <!-- <ion-col width-70>
             <span ion-text color="primary"><strong>{{ trip.price_child | currency:'USD':true }}</strong> Child (0-12 years)</span>
-          </ion-col>
+          </ion-col> 
           <ion-col width-10 text-center>
             <ion-icon name="remove-circle" class="text-2x" tappable (click)="minusChildren()" [hidden]="children < 1"
                       color="secondary"></ion-icon>
@@ -78,15 +78,14 @@
           <ion-col width-10 text-center>{{ children }}</ion-col>
           <ion-col width-10 text-center>
             <ion-icon name="add-circle" class="text-2x" tappable (click)="plusChildren()" color="secondary"></ion-icon>
-          </ion-col>
+          </ion-col>-->
         </ion-row>
       </ion-grid>
     </div>
     <div padding class="form-bottom">
 <!--       <span ion-text color="dark" class="bold">{{ adults }} Adults</span> -->
       <!--booking button-->
-      <button ion-button class="pull-right" color="secondary" tappable (click)="checkout()">Book Now {{ adults * trip.price_adult +
-        children * trip.price_child | currency:'USD':true }}
+      <button ion-button class="pull-right" color="secondary" tappable (click)="checkout()">Book Now {{ adults * trip.price | currency:'SGD$':true }}
       </button>
       <div class="clear"></div>
     </div>

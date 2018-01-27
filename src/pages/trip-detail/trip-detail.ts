@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {NavController} from "ionic-angular";
+import { NavController, NavParams} from "ionic-angular";
 import {TripService} from "../../services/trip-service";
 import {CheckoutTripPage} from "../checkout-trip/checkout-trip";
 
@@ -15,9 +15,13 @@ export class TripDetailPage {
   // number of children
   public children = 0;
 
-  constructor(public nav: NavController, public tripService: TripService) {
+  public id = 0;
+
+  constructor(public nav: NavController,
+    public tripService: TripService,
+    public navParams: NavParams) {
     // set sample data
-    this.trip = tripService.getItem(1);
+    this.trip = tripService.getItem(navParams.get('id'));
   }
 
   // minus adult when click minus button
@@ -42,6 +46,10 @@ export class TripDetailPage {
 
   // go to checkout page
   checkout() {
-    this.nav.push(CheckoutTripPage);
+    this.nav.push(CheckoutTripPage, {
+      adults: this.adults,
+      children: this.children,
+      date: this.trip.date,
+    });
   }
 }
