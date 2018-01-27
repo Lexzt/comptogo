@@ -19,6 +19,7 @@ import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
 import { ldrsub } from "../pages/ldrsub/ldrsub";
 // import { FAQ } from "../pages/faq/faq";
 import { AddShoppingPage } from '../pages/add-shopping/add-shopping';
+import { TripsPage } from "../pages/trips/trips";
 
 
 export interface MenuItem {
@@ -48,12 +49,12 @@ export class MyApp {
 
 //*******************************************************************************************************************
     this.appMenuItems = [
-      {title: 'Home', component: HomePage, icon: 'home'},
-      {title: 'FAQ', component: faq, icon: 'help-circle'},
+      { title: 'Home', component: TripsPage, icon: 'home'},
       {title: 'Achievements', component: achievements, icon: 'trophy'},
       // {title: 'Find Tournaments', component: HomePage, icon: 'ios-search'},
       {title: 'Leaderboards', component: LeaderboardsPage, icon: 'stats'},
       // {title: 'SubpageParticipation', component: ldrsub, icon: 'build'},
+      { title: 'FAQ', component: faq, icon: 'help-circle' },
       { title: 'Settings', component: SettingsPage, icon: 'build' },
     ];
   }

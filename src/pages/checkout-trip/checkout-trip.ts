@@ -62,9 +62,9 @@ export class CheckoutTripPage {
     // show message
     let toast = this.toastCtrl.create({
       showCloseButton: true,
-      cssClass: 'profile-bg',
+      // cssClass: 'profile-bg',
       message: 'Joined Activity Success!',
-      duration: 1000,
+      duration: 3000,
       position: 'bottom'
     });
 
@@ -75,6 +75,6 @@ export class CheckoutTripPage {
       toast.present();
       // back to home page
       this.nav.setRoot(TripsPage);
-    }, 100)
+    }, 1000)
   }
 }

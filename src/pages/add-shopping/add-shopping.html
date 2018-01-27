@@ -7,18 +7,19 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
-    <ion-label color="primary" stacked>Name of Event</ion-label>
-    <ion-input type="email" [(ngModel)]="shoppingItem.name" placeholder="Name"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label color="primary" stacked>Description</ion-label>
-    <ion-input type="email" [(ngModel)]="shoppingItem.description" placeholder="Description"></ion-input>
-  </ion-item>
-  <br>
   <ion-item-group>
-    <ion-item-divider color="secondary" class="bold">Tournament Settings</ion-item-divider>
+    <ion-item-divider color="secondary" class="bold">Name and Description of Event</ion-item-divider>
+    <ion-item>
+      <ion-input type="email" [(ngModel)]="shoppingItem.name" placeholder="Name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="email" [(ngModel)]="shoppingItem.description" placeholder="Description"></ion-input>
+    </ion-item>
+    <br>
+  </ion-item-group>
+  
+  <ion-item-group>
+    <ion-item-divider color="secondary" class="bold">Tournament Details</ion-item-divider>
     <ion-item>
       <ion-label>Sport</ion-label>
       <ion-select [(ngModel)]="shoppingItem.sports" cancelText="Cancel" okText="OK">
@@ -30,40 +31,37 @@
   </ion-item-group>
   <br>
   <ion-item-group>
-    <ion-item-divider color="secondary" class="bold">Location</ion-item-divider>
     <ion-item>
       <ion-label>Location</ion-label>
       <ion-select [(ngModel)]="shoppingItem.location" cancelText="Cancel" okText="OK">
         <ion-option value="Bedok Community Club" selected="true">Bedok CC</ion-option>
       </ion-select>
     </ion-item>
-  </ion-item-group>
-  <br>
-  <ion-item>
-    <ion-label color="primary" stacked>Price</ion-label>
-    <ion-range min="0" max="20" [(ngModel)]="shoppingItem.price" color="secondary" pin="true">
-      <ion-label range-left>0</ion-label>
-      <ion-label range-right>20</ion-label>
-    </ion-range>
-  </ion-item>
-  <br>
-  <ion-item>
-    <ion-label color="primary" stacked>Number of Hours</ion-label>
-    <ion-range min="0" max="12" [(ngModel)]="shoppingItem.noOfHours" color="secondary" pin="true">
-      <ion-label range-left>0 Hr</ion-label>
-      <ion-label range-right>12 Hr</ion-label>
-    </ion-range>
-  </ion-item>
-  <br>
-  <ion-item>
-    <ion-label color="primary" stacked>Rank</ion-label>
-    <ion-range dualKnobs="true" pin="true" [(ngModel)]="structure" min="0" max="10" (ionChange)="onChange($event)" color="dark">
-      <ion-label range-left>0</ion-label>
-      <ion-label range-right>10</ion-label>
-    </ion-range>
-  </ion-item>
-  <br>
-  <div text-right>
+    <br>
+    <ion-item>
+      <ion-label color="primary" stacked>Price</ion-label>
+      <ion-range min="0" max="20" [(ngModel)]="shoppingItem.price" color="secondary" pin="true">
+        <ion-label range-left>0</ion-label>
+        <ion-label range-right>20</ion-label>
+      </ion-range>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label color="primary" stacked>Number of Hours</ion-label>
+      <ion-range min="0" max="12" [(ngModel)]="shoppingItem.noOfHours" color="secondary" pin="true">
+        <ion-label range-left>0 Hr</ion-label>
+        <ion-label range-right>12 Hr</ion-label>
+      </ion-range>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label color="primary" stacked>Rank</ion-label>
+      <ion-range dualKnobs="true" pin="true" [(ngModel)]="structure" min="0" max="10" (ionChange)="onChange($event)" color="dark">
+        <ion-label range-left>0</ion-label>
+        <ion-label range-right>10</ion-label>
+      </ion-range>
+    </ion-item>
+    <br>
     <ion-item>
       <ion-label color="primary" stacked>Date</ion-label>
       <ion-datetime displayFormat="DD/MM/YYYY" placeholder="Date" [(ngModel)]="shoppingItem.date"></ion-datetime>
@@ -74,6 +72,7 @@
       <ion-datetime displayFormat="HH:mm" placeholder="Time" [(ngModel)]="shoppingItem.time"></ion-datetime>
     </ion-item>
     <br>
-  </div>
+  </ion-item-group>
+    
   <button ion-button block (click)="addShoppingItem(shoppingItem)">Add Item</button>
 </ion-content>
