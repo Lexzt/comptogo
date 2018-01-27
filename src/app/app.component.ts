@@ -16,6 +16,7 @@ import { achievements } from "../pages/achievements/achievements";
 // import { AccomplishmentsPage } from "../pages/accomplishments/accomplishments";
 import { SettingsPage } from "../pages/settings/settings";
 import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
+import { ldrsub } from "../pages/ldrsub/ldrsub";
 // import { FAQ } from "../pages/faq/faq";
 
 
@@ -52,6 +53,8 @@ export class MyApp {
       // {title: 'Find Tournaments', component: HomePage, icon: 'ios-search'},
       {title: 'Leaderboards', component: LeaderboardsPage, icon: 'stats'},
       {title: 'Settings', component: SettingsPage, icon: 'build'},
+      {title: 'SubpageParticipation', component: ldrsub, icon: 'build'},
+
     ];
   }
 
