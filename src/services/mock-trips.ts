@@ -13,12 +13,12 @@ export let TRIPS = [
     cancellation_time: "7d", // In days
     expected_time: "6h",     // In hours
     prize: 300,
-    thumb: "assets/img/trip/thumb/trip_1.jpg",
+    thumb: "assets/img/trip/thumb/badminton.png",
     images: [
-      "assets/img/trip/thumb/trip_5.jpg",
-      "assets/img/trip/thumb/trip_6.jpg",
-      "assets/img/trip/thumb/trip_7.jpg",
-      "assets/img/trip/thumb/trip_8.jpg",
+      "assets/img/trip/thumb/badminton2.jpg",
+      "assets/img/trip/thumb/badminton3.jpg",
+      "assets/img/trip/thumb/badminton4.jpg",
+      "assets/img/trip/thumb/badminton5.jpg",
     ],
     highlights: [
       "Round robin",
@@ -38,12 +38,12 @@ export let TRIPS = [
     cancellation_time: "7d", // In days
     expected_time: "6h",     // In hours
     prize: 0,
-    thumb: "assets/img/trip/thumb/trip_1.jpg",
+    thumb: "assets/img/trip/thumb/bball1.jpg",
     images: [
-      "assets/img/trip/thumb/trip_5.jpg",
-      "assets/img/trip/thumb/trip_6.jpg",
-      "assets/img/trip/thumb/trip_7.jpg",
-      "assets/img/trip/thumb/trip_8.jpg",
+      "assets/img/trip/thumb/bball2.jpg",
+      "assets/img/trip/thumb/bball3.jpg",
+      "assets/img/trip/thumb/bball4.jpg",
+      "assets/img/trip/thumb/bball5.jpg",
     ],
     highlights: [
       "Round robin",
