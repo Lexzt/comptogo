@@ -33,7 +33,7 @@ export class AddShoppingPage {
   addShoppingItem(shoppingItem: ShoppingItem) {
     var str = this.shoppingItem.date.split("-");
     var time = this.shoppingItem.time.split(":");
-    var d = new Date(str[0], Number(str[1]) - 1, str[2], time[0], time[1]);
+    var d = new Date(Number(str[0]), Number(str[1]) - 1, Number(str[2]), Number(time[0]), Number(time[1]));
 
     this.shoppingItemRef$.push({
       name: this.shoppingItem.name,
@@ -56,7 +56,12 @@ export class AddShoppingPage {
         "assets/img/trip/thumb/trip_8.jpg",
       ],
       highlights: [
-        "Round robin",
+        "Sport: " + this.shoppingItem.sports,
+        "Rank " + this.structure.lower + " - Rank " + this.structure.upper,
+        "Entry Fee: $" + this.shoppingItem.price,
+        "Expected Duration ~ " + this.shoppingItem.noOfHours + " Hrs",
+        "Date: " + d.toLocaleString(),
+        "Prize Pool: $" + this.shoppingItem.price,
       ]
     });
 

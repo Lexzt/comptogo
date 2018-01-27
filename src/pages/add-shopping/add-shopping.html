@@ -8,7 +8,7 @@
 
 <ion-content padding>
   <ion-item>
-    <ion-label color="primary" stacked>Name</ion-label>
+    <ion-label color="primary" stacked>Name of Event</ion-label>
     <ion-input type="email" [(ngModel)]="shoppingItem.name" placeholder="Name"></ion-input>
   </ion-item>
 
@@ -63,15 +63,17 @@
     </ion-range>
   </ion-item>
   <br>
-  <ion-item>
-    <ion-label color="primary" stacked>Date</ion-label>
-    <ion-datetime displayFormat="DD/MM/YYYY" placeholder="Date" [(ngModel)]="shoppingItem.date"></ion-datetime>
-  </ion-item>
-  <br>
-  <ion-item>
-    <ion-label>Time</ion-label>
-    <ion-datetime displayFormat="HH:mm" [(ngModel)]="shoppingItem.time"></ion-datetime>
-  </ion-item>
-  <br>
+  <div text-right>
+    <ion-item>
+      <ion-label color="primary" stacked>Date</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" placeholder="Date" [(ngModel)]="shoppingItem.date"></ion-datetime>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label color="primary" stacked>Time</ion-label>
+      <ion-datetime displayFormat="HH:mm" placeholder="Time" [(ngModel)]="shoppingItem.time"></ion-datetime>
+    </ion-item>
+    <br>
+  </div>
   <button ion-button block (click)="addShoppingItem(shoppingItem)">Add Item</button>
 </ion-content>

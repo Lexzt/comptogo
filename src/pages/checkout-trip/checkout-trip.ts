@@ -45,14 +45,14 @@ export class CheckoutTripPage {
     this.shoppingItemSubscription =
       this.shoppingItemRef$.subscribe(
         shoppingItem => this.shoppingItem = shoppingItem);
-    console.log(this.shoppingItem);
-    
+    // console.log(this.shoppingItem);
   }
 
   // process send button
   send() {
     this.shoppingItem.noOfParticipants += this.adults;
     this.shoppingItem.prize += this.adults * this.shoppingItem.price;
+    this.shoppingItem.highlights[5] = "Prize Pool: $" + this.shoppingItem.price * this.shoppingItem.noOfParticipants;
     this.shoppingItemRef$.update(this.shoppingItem);
 
     // send booking info
