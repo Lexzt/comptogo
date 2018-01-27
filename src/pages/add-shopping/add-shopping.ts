@@ -33,7 +33,7 @@ export class AddShoppingPage {
   addShoppingItem(shoppingItem: ShoppingItem) {
     var str = this.shoppingItem.date.split("-");
     var time = this.shoppingItem.time.split(":");
-    var d = new Date(str[0], Number(str[1]) - 1, str[2], time[0], time[1]);
+    var d = new Date(Number(str[0]), Number(str[1]) - 1, Number(str[2]), Number(time[0]), Number(time[1]));
 
     this.shoppingItemRef$.push({
       name: this.shoppingItem.name,
