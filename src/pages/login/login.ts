@@ -46,7 +46,7 @@ export class LoginPage {
           handler: data => {
             console.log('Send clicked');
             let toast = this.toastCtrl.create({
-              message: 'Email was sended successfully',
+              message: 'Email was sent successfully',
               duration: 3000,
               position: 'top',
               cssClass: 'dark-trans',
