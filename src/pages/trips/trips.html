@@ -7,7 +7,7 @@
     </button>
     
     <button ion-button float-right tappable (click)="addTournament()">
-      <ion-icon name="cog"></ion-icon>
+      <ion-icon name="ios-add-circle" md="md-add-circle"></ion-icon>
     </button>
   </ion-navbar>
 
@@ -40,7 +40,8 @@
   </div> -->
 
   <div class="trip card" *ngFor="let trip of shoppingListRef$ | async" tappable (click)="viewDetail(trip)" margin-bottom>
-    <div class="background border-bottom" [ngStyle]="{'background-image': 'url(' + trip.thumb + ')'}">
+    <div class="background" [ngStyle]="{'background-image': 'url(' + trip.thumb + ')'}">
+    <!-- <div class="background border-bottom" [ngStyle]="{'background-image': 'url(' + trip.thumb + ')'}"> -->
       <div class="background-filter rlt">
         <div class="align-bottom" padding-left padding-right>
           <h6 class="pull-right text-white" ion-text>Entry: {{ trip.price | currency:'$':true }}</h6>

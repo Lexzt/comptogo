@@ -50,9 +50,18 @@ export class CheckoutTripPage {
 
   // process send button
   send() {
+    var highlight = [
+      this.shoppingItem.highlights[0],
+      this.shoppingItem.highlights[1],
+      this.shoppingItem.highlights[2],
+      this.shoppingItem.highlights[3],
+      this.shoppingItem.highlights[4],
+      "Prize Pool: $" + (this.shoppingItem.price * this.shoppingItem.noOfParticipants),
+      "Number of Participants: " + (this.shoppingItem.noOfParticipants + this.adults)
+    ];
     this.shoppingItem.noOfParticipants += this.adults;
     this.shoppingItem.prize += this.adults * this.shoppingItem.price;
-    this.shoppingItem.highlights[5] = "Prize Pool: $" + Number(this.shoppingItem.price) * Number(this.shoppingItem.noOfParticipants);
+    this.shoppingItem.highlights = highlight;
     this.shoppingItemRef$.update(this.shoppingItem);
 
     // send booking info

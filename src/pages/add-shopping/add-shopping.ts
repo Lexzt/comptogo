@@ -62,6 +62,7 @@ export class AddShoppingPage {
         "Expected Duration ~ " + this.shoppingItem.noOfHours + " Hrs",
         "Date: " + d.toLocaleString(),
         "Prize Pool: $" + this.shoppingItem.price,
+        "Number of Participants: 1", 
       ]
     });
 
