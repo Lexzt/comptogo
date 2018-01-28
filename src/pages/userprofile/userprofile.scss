@@ -1,7 +1,10 @@
 page-userprofile {
 
   .card-background-page {
-
+    $colors-gold: #FFD700;
+    $colors-silver: #C0C0C0;
+    $colors-bronze: #CD7F32;
+    
     .avatar {
       vertical-align: middle;
       border-radius: 50%;
