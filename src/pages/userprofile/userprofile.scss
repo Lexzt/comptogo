@@ -1,0 +1,44 @@
+page-userprofile {
+
+  .card-background-page {
+
+    .avatar {
+      vertical-align: middle;
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+      height: 30%;
+
+    }
+
+    .badminton {
+      background-color: #ffdddd;
+      border-left: 6px solid #f44336;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      height: 100px;
+    }
+    .basketball {
+      background-color: #DAF7A6;
+      border-left: 6px solid #008000;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      height: 100px;
+    }
+    .soccer {
+      background-color: #ffdddd;
+      border-left: 6px solid #f44336;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      height: 100px;
+    }
+
+
+
+  }
+}

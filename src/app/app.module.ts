@@ -28,6 +28,7 @@ import {achievements} from "../pages/achievements/achievements";
 //****************************************************************************************
 import { LeaderboardsPage } from "../pages/leaderboards/leaderboards";
 import { ldrsub } from "../pages/ldrsub/ldrsub";
+import { UserProfilePage } from "../pages/userprofile/userprofile";
 
 //--------------- KEITH FIREBASE ------------------- //
 import { AngularFireModule } from 'angularfire2';
@@ -40,6 +41,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { FIREBASE_CREDENTIALS } from './firebase.credentials';
 import { AddShoppingPage } from '../pages/add-shopping/add-shopping';
 //--------------- KEITH FIREBASE ------------------- //
+
 
 // import services
 // end import services
@@ -65,6 +67,7 @@ import { AddShoppingPage } from '../pages/add-shopping/add-shopping';
     ldrsub,
     LeaderboardsPage,
     AddShoppingPage,
+    UserProfilePage,
   ],
   imports: [
     BrowserModule,
@@ -101,6 +104,7 @@ import { AddShoppingPage } from '../pages/add-shopping/add-shopping';
     LeaderboardsPage,
     ldrsub,
     AddShoppingPage,
+    UserProfilePage,
   ],
   providers: [
     StatusBar,
