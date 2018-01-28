@@ -12,4 +12,8 @@ export class ldrsub {
 
   }
 
+  toUserProfile(){
+    this.navCtrl.push(UserProfilePage);
+  }
+
 }
