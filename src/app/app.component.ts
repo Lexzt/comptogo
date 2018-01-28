@@ -57,7 +57,7 @@ export class MyApp {
       // {title: 'SubpageParticipation', component: ldrsub, icon: 'build'},
       { title: 'FAQ', component: faq, icon: 'help-circle' },
       { title: 'Settings', component: SettingsPage, icon: 'build' },
-      { title: 'User Profile', component: UserProfilePage, icon: 'build' },
+      //{ title: 'User Profile', component: UserProfilePage, icon: 'build' },
     ];
   }
 
