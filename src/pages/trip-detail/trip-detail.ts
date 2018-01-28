@@ -22,7 +22,7 @@ export class TripDetailPage {
     public navParams: NavParams) {
     // set sample data
     this.trip = navParams.get('id');
-    console.log(this.trip.$key);
+    // console.log(this.trip.$key);
   }
 
   // minus adult when click minus button

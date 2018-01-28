@@ -10,7 +10,7 @@ export interface ShoppingItem {
     date: string;
     time: string,
     noOfHours: number;
-    noOfParticipants: string;
+    noOfParticipants: number;
     prize: number;
     cancellation_time: string;
     thumb: "assets/img/trip/thumb/trip_1.jpg";
@@ -20,7 +20,5 @@ export interface ShoppingItem {
         "assets/img/trip/thumb/trip_7.jpg",
         "assets/img/trip/thumb/trip_8.jpg"
     ];
-    highlights: [
-        "Round robin"
-    ];
+    highlights: string[];
 }

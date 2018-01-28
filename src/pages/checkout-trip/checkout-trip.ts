@@ -45,14 +45,22 @@ export class CheckoutTripPage {
     this.shoppingItemSubscription =
       this.shoppingItemRef$.subscribe(
         shoppingItem => this.shoppingItem = shoppingItem);
-    console.log(this.shoppingItem);
-    
+    // console.log(this.shoppingItem);
   }
 
   // process send button
   send() {
+    var highlight = [
+      this.shoppingItem.highlights[0],
+      this.shoppingItem.highlights[1],
+      this.shoppingItem.highlights[2],
+      this.shoppingItem.highlights[3],
+      this.shoppingItem.highlights[4],
+      "Prize Pool: $" + (this.shoppingItem.price * this.shoppingItem.noOfParticipants)
+    ];
     this.shoppingItem.noOfParticipants += this.adults;
     this.shoppingItem.prize += this.adults * this.shoppingItem.price;
+    this.shoppingItem.highlights = highlight;
     this.shoppingItemRef$.update(this.shoppingItem);
 
     // send booking info
@@ -62,9 +70,9 @@ export class CheckoutTripPage {
     // show message
     let toast = this.toastCtrl.create({
       showCloseButton: true,
-      cssClass: 'profile-bg',
+      // cssClass: 'profile-bg',
       message: 'Joined Activity Success!',
-      duration: 1000,
+      duration: 3000,
       position: 'bottom'
     });
 
@@ -75,6 +83,6 @@ export class CheckoutTripPage {
       toast.present();
       // back to home page
       this.nav.setRoot(TripsPage);
-    }, 100)
+    }, 1000)
   }
 }

@@ -56,7 +56,12 @@ export class AddShoppingPage {
         "assets/img/trip/thumb/trip_8.jpg",
       ],
       highlights: [
-        "Round robin",
+        "Sport: " + this.shoppingItem.sports,
+        "Rank " + this.structure.lower + " - Rank " + this.structure.upper,
+        "Entry Fee: $" + this.shoppingItem.price,
+        "Expected Duration ~ " + this.shoppingItem.noOfHours + " Hrs",
+        "Date: " + d.toLocaleString(),
+        "Prize Pool: $" + this.shoppingItem.price,
       ]
     });
 
